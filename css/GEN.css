@@ -1,0 +1,17 @@
+@media (hover: hover) {
+    #Mediafire:hover{
+        color: #1966f5;
+    }
+
+    .memb div h5 a:hover{
+        color: rgba(255, 255, 255, 0.068)!important;
+        text-shadow: rgba(255, 255, 255, 0.068) 8px 8px 5px!important;
+    }
+
+}
+
+@media (hover: none) {
+    #Mediafire{
+        color: #1966f5!important;
+    }
+}
