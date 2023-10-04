@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --main-color: #56d330;
-    --hover-color: #73e879;
+    --main-color: #1a1a1a;
+    --hover-color: #929392;
     --text-color: #CCC;
     --nav-color: #242526;
-    --body-color: #2e2e2e;
+    --body-color: #393939;
     --side-nav: #242526;
     --search-text: #CCC;
     --search-bar: #242526;
     --text-color-lg: #F2F2F2;
-    --nav-line: #5fe13e;
+    --nav-line: #656565;
     --content-color: #525252;
 }
 
@@ -26,7 +26,8 @@
 }
 
 body {
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    background-color: black;
     color: var(--text-color);
 }
 
@@ -51,3 +52,25 @@ body {
     height: 100vh;
     background: var(--body-color);
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #707070 #303030;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #303030;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #707070;
+    border-radius: 2px;
+    border: 3px solid #474747;
+  }

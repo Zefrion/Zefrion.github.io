@@ -9,6 +9,8 @@ nav{
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 nav .nav-bar{
