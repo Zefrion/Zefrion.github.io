@@ -4,6 +4,7 @@ function ricerca() {
     var lista;
     var voci;
     var x;
+    var y;
     var i;
     var testo;
     var resto;
@@ -27,11 +28,22 @@ function ricerca() {
           } else {
             resto[i].style.display = "none";
           }
+      }
 
-          if (testo.toUpperCase().indexOf(filtro) > -1) {
-            ita[i].style.display = "";
+      for (i = 0; i < ita.length; i++) {
+        y = lista.getElementsByTagName("lang")[i];
+        testo = y.textContent || y.innerText;
+        if (testo.toUpperCase().indexOf(filtro) > -1) {
+          ita[i].style.display = "";
+        } else {
+          ita[i].style.display = "none";
+        }
+
+        if (testo.toUpperCase().indexOf(filtro) > -1) {
+            resto[i].style.display = "";
           } else {
-            ita[i].style.display = "none";
+            resto[i].style.display = "none";
           }
       }
+
     }
