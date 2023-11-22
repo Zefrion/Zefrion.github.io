@@ -56,7 +56,7 @@
     <div class="body-fix">
         <center>
             <select id="categorySelect" onchange="filterList()">
-                <option value="tutte">Tutte le Categorie</option>
+                <option value="tutte">Tutte le Opzioni</option>
                 <option value="V0.0.1">V0.0.1</option>
                 <option value="V0.0.2">V0.0.2</option>
                 <option value="V0.0.3">V0.0.3</option>
@@ -67,20 +67,20 @@
                 <option value="V0.0.8">V0.0.8</option>
             </select>
 
-            <!-- <select id="versionSelect" onchange="filterList()">
-                <option value="tutte">Tutte le Categorie</option>
+            <select id="versionSelect" onchange="filterVer()">
+                <option value="tutte">Tutte le Versioni</option>
                 <option value="V1.19">V1.19</option>
                 <option value="V1.20">V1.20</option>
-            </select> -->
+            </select>
         </center>
         
-        <div style="overflow: auto; max-height: 70vh; width: auto;" id="myList">
+        <div style="overflow: auto; max-height: 70vh; width: auto;" id="myList" id="myVer">
 
-            <div class="content" data-category="V0.0.8">
+            <div class="content" data-category="V0.0.8" ver-category="V.19">
                 <section>
                     <article>
                         <h5 style="color: #677535;">TexturePack V 0.0.8</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.8">
+                        <div class="article norm-txt-dk" data-category="V0.0.8" ver-category="V.19">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/kvurmjz4sjy5qk3/NoWar-TexturePack-0.0.8.zip/file" target="_blank">Clicca Qui</a>
@@ -189,7 +189,7 @@
     </footer>
 
     <script type="text/javascript" src="../js/filter.js"></script>
-    <!-- <script type="text/javascript" src="../js/filter2.js"></script> -->
+    <script type="text/javascript" src="../js/filter2.js"></script>
     <script type="text/javascript" src="../js/navbar.js"></script>
 </body>
 </html>
