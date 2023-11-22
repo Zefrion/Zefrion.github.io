@@ -12,6 +12,7 @@
     --text-color-lg: #F2F2F2;
     --nav-line: #656565;
     --content-color: #525252;
+    --text-color-dk: #303030;
 }
 
 *{
@@ -20,7 +21,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: var(--text-color);
     list-style: none;
     transition: all 0.4s ease;
 }
