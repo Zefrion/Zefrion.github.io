@@ -51,36 +51,56 @@
         </div>
     </nav>
 
-    
-
     <div class="body-fix">
         <center>
-            <select id="categorySelect" onchange="filterList()">
-                <option value="tutte">Tutte le Opzioni</option>
-                <option value="V0.0.1">V0.0.1</option>
-                <option value="V0.0.2">V0.0.2</option>
-                <option value="V0.0.3">V0.0.3</option>
-                <option value="V0.0.4">V0.0.4</option>
-                <option value="V0.0.5">V0.0.5</option>
-                <option value="V0.0.6">V0.0.6</option>
-                <option value="V0.0.7">V0.0.7</option>
-                <option value="V0.0.8">V0.0.8</option>
-            </select>
+            <div class="filter">
+                <h1>Select MinecaftVersion</h1>
+                <div class="models">
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="1.20" onchange="change();">1.20</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="1.19" onchange="change();">1.19</label>
+                    </div>
+                </div>
 
-            <select id="versionSelect" onchange="filterVer()">
-                <option value="tutte">Tutte le Versioni</option>
-                <option value="V1.19">V1.19</option>
-                <option value="V1.20">V1.20</option>
-            </select>
+                <h1>Select OurVersion</h1>
+                <div class="processors">
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.8" onchange="change();">V. 0.0.8</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.7" onchange="change();">V. 0.0.7</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.6" onchange="change();">V. 0.0.6</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.5" onchange="change();">V. 0.0.5</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.4" onchange="change();">V. 0.0.4</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.3" onchange="change();">V. 0.0.3</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.2" onchange="change();">V. 0.0.2</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" rel="0.0.1" onchange="change();">V. 0.0.1</label>
+                    </div>
+                </div>
+            </div>
         </center>
         
-        <div style="overflow: auto; max-height: 70vh; width: auto;" id="myLis" class="myVer">
+        <div class="overflow result">
 
-            <div class="content" data-category="V0.0.8" ver-category="V.19">
+            <div class="content 1.19 0.0.8">
                 <section>
                     <article>
                         <h5 style="color: #677535;">TexturePack V 0.0.8</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.8" ver-category="V.19">
+                        <div class="article norm-txt-dk apple">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/kvurmjz4sjy5qk3/NoWar-TexturePack-0.0.8.zip/file" target="_blank">Clicca Qui</a>
@@ -89,11 +109,11 @@
                 </section>
             </div>
 
-            <div class="content" data-category="V0.0.7">
+            <div class="content">
                 <section>
                     <article>
                         <h5 style="color: #677535;">TexturePack V 0.0.7</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.7">
+                        <div class="article norm-txt-dk">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/uwui47n3z05tlh7/NoWar-TexturePack-0.0.7.zip/file" target="_blank">Clicca Qui</a>
@@ -102,11 +122,11 @@
                 </section>
             </div>
 
-            <div class="content" data-category="V0.0.6">
+            <div class="content">
                 <section>
                     <article>
                         <h5 style="color: #677535;">TexturePack V 0.0.6</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.6">
+                        <div class="article norm-txt-dk">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/rudxyr8q94o0efa/NoWar-TexturePack-0.0.6.zip/file" target="_blank">Clicca Qui</a>
@@ -115,11 +135,11 @@
                 </section>
             </div>
 
-            <div class="content" data-category="V0.0.5">
+            <div class="content">
                 <section>
                     <article>
                         <h5 style="color: #677535;">TexturePack V 0.0.5</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.5">
+                        <div class="article norm-txt-dk">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/cwvgcixdsl1pnd7/NoWar-TexturePack-0.0.5.zip/file" target="_blank">Clicca Qui</a>
@@ -128,11 +148,11 @@
                 </section>
             </div>
 
-            <div class="content" data-category="V0.0.4">
+            <div class="content">
                 <section>
                     <article>
                         <h5 style="color: #677535;">TexturePack V 0.0.4</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.4">
+                        <div class="article norm-txt-dk">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/ijd6xjntiaip9y1/NoWar-TexturePack-0.0.4.zip/file" target="_blank">Clicca Qui</a>
@@ -141,11 +161,11 @@
                 </section>
             </div>
 
-            <div class="content" data-category="V0.0.3">
+            <div class="content">
                 <section>
                     <article>
                         <h5 style="color: #677535;">TexturePack V 0.0.3</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.3">
+                        <div class="article norm-txt-dk">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/bigiqyb0tatvxm5/NoWar-TexturePack-0.0.3.zip/file" target="_blank">Clicca Qui</a>
@@ -154,11 +174,11 @@
                 </section>
             </div>
 
-            <div class="content" data-category="V0.0.2">
+            <div class="content">
                 <section>
                     <article>
                         <h5  style="color: #677535;">TexturePack V 0.0.2</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.2">
+                        <div class="article norm-txt-dk">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/uuh26t9if2o0lmg/NoWar-TexturePack-0.0.2.zip/file" target="_blank">Clicca Qui</a>
@@ -167,11 +187,11 @@
                 </section>
             </div>
 
-            <div class="content" data-category="V0.0.1">
+            <div class="content">
                 <section>
                     <article>
                         <h5  style="color: #677535;">TexturePack V 0.0.1</h5>
-                        <div class="article norm-txt-dk" data-category="V0.0.1">
+                        <div class="article norm-txt-dk">
                             <p>Questo è Zefrion's official 1.19.X Minecraft TexturePack.</p>
                             <p>Verrai portato su <a href="https://app.mediafire.com/" id="Mediafire">Mediafire&reg;</a></p>
                             <a href="https://www.mediafire.com/file/by8xwxr4as61ijd/NoWar-TexturePack-0.0.1.zip/file" target="_blank">Clicca Qui</a>
@@ -188,8 +208,6 @@
         <p>Made with &lt;3 by <a href="https://youtube.com/@Sono.Nessunk" target= "_blank">SonoNessunk</a></p>
     </footer>
 
-    <script type="text/javascript" src="../js/filter.js"></script>
-    <script type="text/javascript" src="../js/filter2.js"></script>
     <script type="text/javascript" src="../js/navbar.js"></script>
     <script type="text/javascript" src="../js/checkboxfilter.js"></script>
 </body>
