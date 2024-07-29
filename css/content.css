@@ -2,8 +2,13 @@
     display: grid;
     gap: 1rem; 
     justify-items: center; 
-    place-content: center; 
+    place-content: center;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
 
+.contentDi {
+    justify-items: normal!important; 
 }
 
 .content section article h5 a:hover {
@@ -11,7 +16,7 @@
 }
 
 .content section {
-    max-width: 1024px;
+    max-width: 4024px;
 }
 
 .content section article {
@@ -25,8 +30,8 @@
     margin-right: 1.2rem; 
     border-radius: 0.5rem; 
     border-width: 1px; 
-    background-color: #00000038;
-    box-shadow: 0px 20px 25px -5px rgba(0,0,0,0.1), 0px 10px 10px -5px rgba(0,0,0,0.17), 0px -10px 10px -5px rgba(0,0,0,0.17), 0px -20px 25px -5px rgba(0,0,0,0.1), -20px 0px 25px -5px rgba(0,0,0,0.1), -10px 0px 10px -5px rgba(0,0,0,0.17), 20px 0px 25px -5px rgba(0,0,0,0.1), 10px 0px 10px -5px rgba(0,0,0,0.17);
+    background-color: var(--content-background);
+    box-shadow: 0px 20px 25px -6px rgba(0,0,0,0.1), 0px 10px 10px -6px rgba(0,0,0,0.17), 0px -10px 10px -6px rgba(0,0,0,0.17), 0px -20px 25px -6px rgba(0,0,0,0.1), -20px 0px 25px -6px rgba(0,0,0,0.1), -10px 0px 10px -6px rgba(0,0,0,0.17), 20px 0px 25px -6px rgba(0,0,0,0.1), 10px 0px 10px -6px rgba(0,0,0,0.17);
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -35,6 +40,7 @@
 
 .content section article p {
     text-align: center;
+    max-width: 400px;
 }
 
 .content section article a{
@@ -43,7 +49,7 @@
 }
 
 .content section article a:hover{
-    color: #444444;
+    color: #5398ff;
     line-height: 2.5rem;
 
 }
@@ -55,13 +61,18 @@
     line-height: 2.25rem; 
     font-weight: 700; 
     text-align: center; 
-    color: var(--content-color); 
-    text-transform: uppercase; 
+    color: var(--content-title); 
+    text-transform: uppercase;
 }
 
 .memb h5 {
-    font-size: 2.5em!important;
+    font-size: 3.5em!important;
 
+}
+
+.memb div h5 a:hover{
+    color: rgba(255, 255, 255, 0.068)!important;
+    text-shadow: rgba(255, 255, 255, 0.068) 8px 8px 5px!important;
 }
 
 .article p {
@@ -70,6 +81,7 @@
 }
 
 @media (min-width: 1280px) {
+
     .content section {
         max-width: 1280px;
     }
@@ -78,9 +90,18 @@
         margin-left: 5rem;
         margin-right: 5rem;
     }
+    
+
+    
 }
 
 @media (max-width: 900px) {
+
+    .content {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
     .content section article {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -88,18 +109,6 @@
     
 }
 
-.titlee {
-    font-size: 3rem;
-    text-shadow: #8585859d 15px 12px 7px !important;
-    padding-top: 4.5rem;
-}
-
 .body-fix h5 {
-    text-shadow: #2b2b2ba4 1.7px 1.7px 2px;
-}
-
-.overflow {
-    overflow: auto;
-    max-height: 70vh;
-    width: auto;
+    text-shadow: #131313a4 1.7px 1.7px 1px;
 }

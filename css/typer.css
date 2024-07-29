@@ -2,15 +2,18 @@
     max-width: 1024px; 
     text-align: center; 
 }
+
 .container h1{
     font-size: 4.1em;
     font-weight: 600;
     width: 100%;
     margin: auto;
 }
+
 .container h1 span{
-    text-shadow: rgba(0, 0, 0, 0.596) 1px 1px 5px;
+    text-shadow: rgb(65, 65, 65) 2px 3px;
 }
+
 span{
     color: var(--main-color);
 }
